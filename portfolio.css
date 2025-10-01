@@ -8,10 +8,9 @@
 :root {
     --black: #000;
     --white: #fff;
-    --light-pink: #ffcae9;
-    --darker-pink: #fa9bcf;
-    --mauve: #f4dbe9;
-    --off-white: #fff0f1;
+    --light-pink: #25009f;
+    --blue: #2e00f9;
+    --off-white: #f2f0ff;
     --purple: #cdd0f8;
 }
 
@@ -37,7 +36,7 @@ a {
 header {
     position: fixed;
     width: 100%;
-    background-color: var(--darker-pink);
+    background-color: var(--blue);
     box-shadow: 0px 5px 5px var(--light-pink);
 }
 
@@ -80,7 +79,7 @@ header {
 
 .home-section .home-details .section-title {
     padding: 0;
-    color:var(--purple);
+    color:var(--blue);
 }
 
 .home-section .section-content {
@@ -140,7 +139,7 @@ header {
 /*   Projects Section  */
 
 .projects-section {
-    background-color: var(--darker-pink);
+    background-color: var(--blue);
 }
 
 .projects-section .section-title {
@@ -232,7 +231,7 @@ header {
 
 .resume-section .resume-download .download-button {
     color:var(--black);
-    border: 2px solid var(--darker-pink);
+    border: 2px solid var(--blue);
     padding: 12px 30px;
     border-radius: 12px;
     background-color: var(--light-pink);
@@ -242,3 +241,4 @@ header {
     border-color: var(--purple);
     background-color: var(--mauve);
 }
+
