@@ -6,12 +6,7 @@
 }
 
 :root {
-    --black: #000;
-    --white: #fff;
-    --light-pink: #25009f;
-    --blue: #2e00f9;
-    --off-white: #f2f0ff;
-    --purple: #cdd0f8;
+  --main: #1E123D
 }
 
 ul {
@@ -36,7 +31,7 @@ a {
 header {
     position: fixed;
     width: 100%;
-    background-color: var(--blue);
+    background-color: var(--main);
     box-shadow: 0px 5px 5px var(--light-pink);
 }
 
@@ -45,10 +40,7 @@ header {
     align-items: center;
     padding: 30px;
     justify-content: space-between;
-}
-
-.navbar .site-title {
-    color: var(--white);
+    color: white;
 }
 
 
@@ -66,8 +58,8 @@ header {
 }
 
 .navbar .nav-menu .nav-link:hover {
-    color: var(--light-pink);
-    background-color: var(--off-white);
+    color: var(--main);
+    background-color: white;
 }
 
 /* TODO: Add responsive elements and icons with Font Awesome*/
@@ -79,7 +71,6 @@ header {
 
 .home-section .home-details .section-title {
     padding: 0;
-    color:var(--blue);
 }
 
 .home-section .section-content {
@@ -107,7 +98,6 @@ header {
 /* About Section*/
 
 .about-section {
-    background-color: var(--mauve);
     padding: 0 120px;
 }
 .about-section .about-details .section-title {
@@ -131,7 +121,7 @@ header {
 
 .about-section .about-details p {
     font-size: 1rem;
-    text-align: center;
+    text-align: right;
     margin: 30px 0 20px;
 }
 
@@ -171,9 +161,8 @@ header {
     transition: 0.2s ease;
 }
 
-.projects-section .section-content .projects-list img:hover {
+.projects-section .section-content .projects-list .project:hover {
     transform: scale(1.1);
-
 } 
 
 .projects-section .section-content .project-name {
