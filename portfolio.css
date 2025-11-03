@@ -6,8 +6,10 @@
 }
 
 :root {
-  --main: #1E123D
+  --main: #1E123D;
+  --white: #FFFFFF;
 }
+
 
 ul {
     list-style: none;
@@ -27,12 +29,13 @@ a {
     padding: 0 120px;
 }
 
+
 /*     Navigation Bar    */
 header {
     position: fixed;
     width: 100%;
     background-color: var(--main);
-    box-shadow: 0px 5px 5px var(--light-pink);
+    border-bottom: 2px solid var(--white);
 }
 
 .navbar {
@@ -40,7 +43,7 @@ header {
     align-items: center;
     padding: 20px;
     justify-content: space-between;
-    color: white;
+    color: var(--white);
 }
 
 
@@ -59,14 +62,14 @@ header {
 
 .navbar .nav-menu .nav-link:hover {
     color: var(--main);
-    background-color: white;
+    background-color: var(--white);
 }
 
 /* TODO: Add responsive elements and icons with Font Awesome*/
 
 .home-section {
     padding: 0 120px;
-    background-color: var(--off-white);
+    background-color: var(--main);
 }
 
 .home-section .home-details .section-title {
@@ -79,6 +82,7 @@ header {
     min-height: 100vh;
     justify-content: space-between;
     gap: 50px;
+    color: var(--white);
 }
 
 .home-section img {
@@ -113,15 +117,15 @@ header {
 }
 
 .about-section img {
-    height: 400px;
-    width: 400px;
+    height: 333px;
+    width: 500px;
     border-radius: 6px;
 }
 
 
 .about-section .about-details p {
     font-size: 1rem;
-    text-align: right;
+    text-align: left;
     margin: 30px 0 20px;
 }
 
@@ -197,26 +201,7 @@ header {
     padding: 120px 0 90px;
 }
 
-
-.resume-section .section-content .resume-item .item-title {
-    text-align: center;
-    background-color: var(--white);
-}
-
-.resume-section .section-content .resume-item .item-content {
-    line-height: 12px;
-    padding: 10px;
-}
-
-.resume-section .resume-download {
-    background-color: var(--white);
-    padding: 50px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.2rem;
-}
-
-.resume-section .resume-download .download-button {
+.resume-section #download-button {
     color:var(--black);
     border: 2px solid var(--blue);
     padding: 12px 30px;
@@ -224,8 +209,10 @@ header {
     background-color: var(--light-pink);
 }
 
-.resume-section .resume-download .download-button:hover {
+.resume-section #download-button:hover {
     border-color: var(--purple);
     background-color: var(--mauve);
 }
+
+
 
