@@ -30,6 +30,7 @@ a {
 }
 
 
+
 /*     Navigation Bar    */
 header {
     position: fixed;
@@ -116,7 +117,7 @@ header {
     gap: 50px;
 }
 
-.about-section img {
+.about-section #headshot-image {
     height: 333px;
     width: 500px;
     border-radius: 6px;
@@ -133,15 +134,20 @@ header {
 /*   Projects Section  */
 
 .projects-section {
-    background-color: var(--blue);
+    background-color: var(--main);
+    color: var(--white);
 }
 
 .projects-section .section-title {
     padding: 120px 0 90px;
-
-
 }
 
+.case-study {
+    text-align: center;
+}
+
+
+/*
 .projects-section .section-content {
     min-height: 100vh;
 }
@@ -182,6 +188,7 @@ header {
     text-align: center;
     line-height: 25px;
 }
+*/
 
 /*  Resume Section */
 
@@ -214,5 +221,26 @@ header {
     background-color: var(--mauve);
 }
 
+.resume-section .download-button {
+    border: 2px solid var(--main);
+    padding: 5px;
+    border-radius: 12px;
+}
 
+
+/*  Contact Section */
+
+.contact-section {
+    background-color: var(--main);
+    color: var(--white);
+}
+.contact-section .section-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .section-title {
+    padding: 120px 0 90px;
+}
 
