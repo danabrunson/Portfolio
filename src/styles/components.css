@@ -5,48 +5,61 @@
 /* Navigation Bar */
 header {
   position: fixed;
-  width: 100%;
-  background-color: var(--color-primary);
-  border-bottom: 2px solid var(--color-white);
+  top: 0;
+  right: 0;
+  width: auto;
+  background: transparent;
   z-index: var(--z-fixed);
+  padding: var(--spacing-4);
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  padding: var(--spacing-5);
-  justify-content: space-between;
-  color: var(--color-white);
-  max-width: var(--container-max-width);
-  margin: 0 auto;
+  justify-content: flex-end;
 }
 
 .navbar .nav-menu {
   display: flex;
-  justify-content: center;
-  gap: var(--spacing-2);
+  align-items: center;
+  gap: 0;
+  background-color: var(--color-white);
+  border-radius: var(--radius-full);
+  padding: var(--spacing-2);
+  box-shadow: var(--shadow-md);
+}
+
+.navbar .nav-menu .nav-item {
+  display: flex;
 }
 
 .navbar .nav-menu .nav-link {
-  color: var(--color-white);
+  color: var(--color-primary);
   padding: var(--spacing-2) var(--spacing-4);
   border-radius: var(--radius-lg);
   transition: var(--transition-base);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  white-space: nowrap;
 }
 
 .navbar .nav-menu .nav-link:hover {
-  color: var(--color-primary);
-  background-color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.site-title {
-  font-size: var(--font-size-2xl);
-  font-weight: var(--font-weight-bold);
+.navbar .nav-menu .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: var(--font-weight-medium);
 }
 
 /* Section Styles */
 .section {
   padding: 0 var(--container-padding);
+}
+
+.section:not(.home-section) {
+  padding-top: 100px; /* Account for fixed navbar */
 }
 
 .section-title {
@@ -62,50 +75,64 @@ header {
 
 /* Home Section */
 .home-section {
-  padding: 0 var(--container-padding);
-  background-color: var(--color-primary);
-}
-
-.home-section .home-details .section-title {
   padding: 0;
+  background-color: var(--color-white);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-section .section-content {
   display: flex;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
-  justify-content: space-between;
-  gap: var(--spacing-12);
-  color: var(--color-white);
+  padding: var(--spacing-8);
 }
 
-.home-section img {
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-  border-radius: var(--radius-full);
-}
-
-.home-section .home-details p {
-  line-height: var(--line-height-relaxed);
+.home-section .home-details {
   text-align: center;
-  margin: var(--spacing-8) 0 var(--spacing-5);
-  font-size: var(--font-size-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.home-section .home-title {
+  font-family: var(--font-family-heading);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-primary);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  padding: 0;
+}
+
+.home-section .home-tagline {
+  font-family: var(--font-family-heading);
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-primary);
+  line-height: var(--line-height-normal);
+  margin: 0;
+  padding: 0;
 }
 
 /* About Section */
 .about-section {
   padding: 0 var(--container-padding);
+  min-height: 100vh;
+  padding-top: 100px;
 }
 
-.about-section .about-details .section-title {
-  padding: 0;
+.about-section .section-title {
+  padding: var(--spacing-30) 0 var(--spacing-24);
 }
 
 .about-section .section-content {
   display: flex;
   align-items: center;
-  min-height: 100vh;
   justify-content: space-between;
   gap: var(--spacing-12);
 }
@@ -124,8 +151,8 @@ header {
 
 /* Projects Section */
 .projects-section {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .projects-section .section-title {
@@ -190,70 +217,10 @@ header {
   left: 0;
 }
 
-/* Resume Section */
-.resume-section {
-  background-color: var(--color-off-white);
-}
-
-.resume-section .section-content {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-8);
-}
-
-.resume-section .section-title {
-  padding: var(--spacing-30) 0 var(--spacing-24);
-}
-
-.resume-section-title {
-  font-size: var(--font-size-3xl);
-  margin-bottom: var(--spacing-6);
-  color: var(--color-primary);
-}
-
-.resume-section ul {
-  margin-bottom: var(--spacing-8);
-}
-
-.resume-section li {
-  margin-bottom: var(--spacing-4);
-}
-
-.resume-section h3 {
-  font-size: var(--font-size-xl);
-  margin-bottom: var(--spacing-2);
-  color: var(--color-primary);
-}
-
-.resume-section h4 {
-  font-size: var(--font-size-lg);
-  margin-bottom: var(--spacing-2);
-  color: var(--color-primary);
-}
-
-.resume-section .download-button {
-  display: inline-block;
-  border: 2px solid var(--color-primary);
-  padding: var(--spacing-3) var(--spacing-6);
-  border-radius: var(--radius-lg);
-  color: var(--color-primary);
-  background-color: var(--color-white);
-  transition: var(--transition-base);
-  text-align: center;
-  margin: var(--spacing-8) auto;
-  max-width: 200px;
-}
-
-.resume-section .download-button:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-}
-
 /* Contact Section */
 .contact-section {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .contact-section .section-content {
@@ -262,6 +229,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: var(--color-primary)
 }
 
 .contact-section .section-title {
@@ -285,19 +253,23 @@ header {
 .contact-info h2 {
   font-size: var(--font-size-2xl);
   margin-bottom: var(--spacing-4);
-  color: var(--color-white);
 }
 
 .contact-info p {
   font-size: var(--font-size-lg);
-  color: var(--color-white);
 }
 
-.contact-info a {
+.linkedin-button {
+  background-color: var(--color-primary);
   color: var(--color-white);
+  padding: var(--spacing-2);
+  border-radius: var(--radius-md);
+  font-weight: var(--font-weight-medium);
+  transition: var(--transition-base);
 }
 
 .contact-info a:hover {
   opacity: 0.8;
 }
+
 

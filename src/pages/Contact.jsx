@@ -17,7 +17,7 @@ function Contact() {
               <h2>Phone Number</h2>
               <p>443-561-5789</p>
             </li>
-            <li className="contact-info">
+            <li className="contact-info linkedin-button"> {/* TODO: change link from text to LinkedIn icon */}
               <a href="https://www.linkedin.com/in/dana-brunson">
                 <h2>LinkedIn</h2>
               </a>
@@ -30,4 +30,5 @@ function Contact() {
 }
 
 export default Contact
+
 

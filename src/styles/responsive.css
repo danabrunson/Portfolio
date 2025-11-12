@@ -13,16 +13,10 @@
     padding: var(--spacing-12) var(--spacing-4) var(--spacing-16);
   }
 
-  .home-section .section-content,
   .about-section .section-content {
     flex-direction: column;
     text-align: center;
     padding: var(--spacing-8) 0;
-  }
-
-  .home-section img {
-    height: 300px;
-    width: 300px;
   }
 
   #headshot-image {
@@ -38,16 +32,14 @@
     --container-padding: var(--spacing-4);
   }
 
-  .navbar {
-    flex-direction: column;
-    gap: var(--spacing-4);
-    padding: var(--spacing-4);
+  header {
+    padding: var(--spacing-2);
   }
 
   .navbar .nav-menu {
     flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--spacing-2);
+    padding: var(--spacing-1);
+    gap: var(--spacing-1);
   }
 
   .navbar .nav-menu .nav-link {
@@ -55,14 +47,17 @@
     font-size: var(--font-size-sm);
   }
 
+  .home-section .home-title {
+    font-size: clamp(2rem, 10vw, 4rem);
+  }
+
+  .home-section .home-tagline {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+  }
+
   .section-title {
     font-size: var(--font-size-3xl);
     padding: var(--spacing-10) var(--spacing-4) var(--spacing-12);
-  }
-
-  .home-section img {
-    height: 250px;
-    width: 250px;
   }
 
   .case-study {
@@ -77,4 +72,5 @@
     font-size: var(--font-size-2xl);
   }
 }
+
 

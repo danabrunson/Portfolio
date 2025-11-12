@@ -1,25 +1,23 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 function Navbar() {
+  const location = useLocation()
+  
   return (
     <header>
       <nav className="navbar">
-        <h2 className="site-title">Dana Brunson</h2>
         <ul className="nav-menu">
           <li className="nav-item">
-            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Home</Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-link">About</Link>
+            <Link to="/about" className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}>About</Link>
           </li>
           <li className="nav-item">
-            <Link to="/projects" className="nav-link">Projects</Link>
+            <Link to="/projects" className={`nav-link ${location.pathname === '/projects' ? 'active' : ''}`}>Projects</Link>
           </li>
           <li className="nav-item">
-            <Link to="/resume" className="nav-link">Resume</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact" className="nav-link">Contact</Link>
+            <Link to="/contact" className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`}>Contact</Link>
           </li>
         </ul>
       </nav>
@@ -28,4 +26,5 @@ function Navbar() {
 }
 
 export default Navbar
+
 

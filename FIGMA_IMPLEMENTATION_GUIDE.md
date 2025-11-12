@@ -113,3 +113,4 @@ Instead of hardcoded values, use variables:
 - Legacy variable names (like `--main`, `--white`) are aliased to new names for backward compatibility
 - The structure is designed to make it easy to match Figma designs exactly
 
+

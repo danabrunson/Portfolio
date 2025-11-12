@@ -9,15 +9,10 @@
   --color-black: #000000;
   
   /* Colors - Extended Palette (add more as needed from Figma) */
-  --color-off-white: #F5F5F5;
-  --color-light-pink: #FFE5E5;
-  --color-mauve: #E6D5E6;
-  --color-blue: #4A90E2;
-  --color-purple: #9B59B6;
   
   /* Typography - Font Families */
   --font-family-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  --font-family-heading: var(--font-family-primary);
+  --font-family-heading: 'Georgia', 'Times New Roman', 'Times', serif; /* Serif for main headings */
   --font-family-body: var(--font-family-primary);
   
   /* Typography - Font Sizes */
@@ -106,10 +101,7 @@
   --main: var(--color-primary);
   --white: var(--color-white);
   --black: var(--color-black);
-  --off-white: var(--color-off-white);
-  --light-pink: var(--color-light-pink);
-  --mauve: var(--color-mauve);
-  --blue: var(--color-blue);
-  --purple: var(--color-purple);
+  --off-white: var(--color-white); /* Default fallback */
 }
+
 
