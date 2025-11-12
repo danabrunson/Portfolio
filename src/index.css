@@ -1,0 +1,16 @@
+/* ============================================
+   MAIN STYLESHEET - Imports all style modules
+   ============================================ */
+
+/* Design Tokens - Update these from Figma */
+@import './styles/variables.css';
+
+/* Base Styles */
+@import './styles/base.css';
+
+/* Component Styles */
+@import './styles/components.css';
+
+/* Responsive Styles */
+@import './styles/responsive.css';
+

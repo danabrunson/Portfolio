@@ -1,0 +1,80 @@
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+  :root {
+    --container-padding: var(--spacing-8);
+  }
+
+  .section-title {
+    font-size: var(--font-size-4xl);
+    padding: var(--spacing-12) var(--spacing-4) var(--spacing-16);
+  }
+
+  .home-section .section-content,
+  .about-section .section-content {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-8) 0;
+  }
+
+  .home-section img {
+    height: 300px;
+    width: 300px;
+  }
+
+  #headshot-image {
+    height: 250px;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  :root {
+    --container-padding: var(--spacing-4);
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4);
+  }
+
+  .navbar .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-2);
+  }
+
+  .navbar .nav-menu .nav-link {
+    padding: var(--spacing-2) var(--spacing-3);
+    font-size: var(--font-size-sm);
+  }
+
+  .section-title {
+    font-size: var(--font-size-3xl);
+    padding: var(--spacing-10) var(--spacing-4) var(--spacing-12);
+  }
+
+  .home-section img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .case-study {
+    font-size: var(--font-size-2xl);
+  }
+
+  .case-study-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .resume-section-title {
+    font-size: var(--font-size-2xl);
+  }
+}
+

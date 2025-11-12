@@ -117,7 +117,7 @@ header {
     gap: 50px;
 }
 
-.about-section #headshot-image {
+#headshot-image {
     height: 333px;
     width: 500px;
     border-radius: 6px;
