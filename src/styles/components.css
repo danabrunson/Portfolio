@@ -25,8 +25,9 @@ header {
   gap: 0;
   background-color: var(--color-white);
   border-radius: var(--radius-full);
-  padding: var(--spacing-2);
-  box-shadow: var(--shadow-md);
+  /*padding: var(--spacing-1);
+  border: 0.1px solid var(--color-primary);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);; */
 }
 
 .navbar .nav-menu .nav-item {
@@ -40,17 +41,16 @@ header {
   transition: var(--transition-base);
   font-family: var(--font-family-primary);
   font-size: var(--font-size-base);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-medium);
   white-space: nowrap;
 }
 
 .navbar .nav-menu .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: underline;
 }
 
 .navbar .nav-menu .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.2);
-  font-weight: var(--font-weight-medium);
+  text-decoration: underline;
 }
 
 /* Section Styles */
@@ -64,8 +64,10 @@ header {
 
 .section-title {
   text-align: center;
-  padding: var(--spacing-16) var(--spacing-5) var(--spacing-24);
+  padding: var(--spacing-12) var(--spacing-5) var(--spacing-24);
   font-size: var(--font-size-5xl);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-normal);
 }
 
 .section-content {
@@ -119,15 +121,56 @@ header {
   padding: 0;
 }
 
+.home-buttons {
+  margin-top: var(--spacing-16);
+  display: flex;
+  gap: var(--spacing-4);
+}
+
+.home-buttons .home-resume-link {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing-3) var(--spacing-8);
+  border: 2px solid transparent;
+  border-radius: var(--radius-full);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+.home-buttons .home-resume-link:hover {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.home-buttons .home-projects-link {
+  background-color: transparent;
+  color: var(--color-primary);
+  padding: var(--spacing-3) var(--spacing-8);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-full);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+.home-buttons .home-projects-link:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
 /* About Section */
 .about-section {
   padding: 0 var(--container-padding);
   min-height: 100vh;
   padding-top: 100px;
+  color: var(--color-primary);
 }
 
 .about-section .section-title {
-  padding: var(--spacing-30) 0 var(--spacing-24);
+  padding: var(--spacing-12) 0 var(--spacing-24);
+
 }
 
 .about-section .section-content {
@@ -147,6 +190,7 @@ header {
   font-size: var(--font-size-base);
   text-align: left;
   margin: var(--spacing-8) 0 var(--spacing-5);
+  font-weight: var(--font-weight-medium);
 }
 
 /* Projects Section */
@@ -159,16 +203,143 @@ header {
   padding: var(--spacing-30) 0 var(--spacing-24);
 }
 
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-8);
+  margin-top: var(--spacing-8);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  border: 1px solid rgba(30, 18, 61, 0.1);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition-base);
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+}
+
+.project-card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.project-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-base);
+}
+
+.project-card:hover .project-card-image img {
+  transform: scale(1.05);
+}
+
+.project-card-content {
+  padding: var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.project-category {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-card-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.project-card-description {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.project-card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+  margin-top: var(--spacing-2);
+}
+
+.project-skill-tag {
+  font-size: var(--font-size-xs);
+  padding: var(--spacing-1) var(--spacing-3);
+  background-color: rgba(30, 18, 61, 0.1);
+  color: var(--color-primary);
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Project Detail Page */
+.project-detail-section {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-8);
+  transition: var(--transition-base);
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.project-detail-header {
+  margin-bottom: var(--spacing-12);
+}
+
+.project-detail-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-primary);
+  margin: var(--spacing-4) 0 0 0;
+}
+
 .case-study {
   text-align: center;
   font-size: var(--font-size-3xl);
   margin-bottom: var(--spacing-6);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-normal);
 }
 
 .case-study-title {
   text-align: center;
   font-size: var(--font-size-2xl);
   margin-bottom: var(--spacing-8);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-normal);
 }
 
 .case-study-content {

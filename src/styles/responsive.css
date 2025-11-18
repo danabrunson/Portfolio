@@ -68,8 +68,13 @@
     font-size: var(--font-size-xl);
   }
 
-  .resume-section-title {
-    font-size: var(--font-size-2xl);
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-6);
+  }
+
+  .project-detail-title {
+    font-size: var(--font-size-3xl);
   }
 }
 
