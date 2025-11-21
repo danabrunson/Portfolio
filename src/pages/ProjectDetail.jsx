@@ -35,15 +35,16 @@ function ProjectDetail() {
               <p>{project.problemStatement}</p>
 
               <h4>Overview of Design Process</h4>
+
+              {project.images && project.images.length > 0 && (
+                <img src={project.images[0]} alt="Design process" />
+              )}
               
               <h5>Affordances and Signifiers</h5>
               {project.designProcess.affordances.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
               
-              {project.images && project.images.length > 0 && (
-                <img src={project.images[0]} alt="Design process" />
-              )}
 
               <h5>Mapping</h5>
               {project.designProcess.mapping.map((paragraph, index) => (

@@ -2,11 +2,11 @@
 export const projects = [
   {
     id: 'interaction-design-rules',
-    title: 'Interaction Design Rules Part 2',
+    title: 'Toronto Cupcakes',
     category: 'Case Study',
     description: 'A redesign of torontocupcakes.com focusing on affordances, signifiers, and mapping to improve user experience.',
     thumbnail: '/case-study-1-issue-1.png',
-    skills: ['Visual Design'],
+    skills: ['Visual Design', 'Design Principles'],
     problemStatement: `The objective of the Interaction Design assignment was to find areas for improvement 
       or the design principles of affordances, signifiers, and mapping and create a redesign 
       of the page that shows those improvements. The website that I was given to focus on for 
@@ -56,8 +56,17 @@ export const projects = [
     reflection: `With this assignment, I further learned and got the opportunity to understand the importance of applying these design 
       principles when creating designs. The application of these principles can greatly affect the user's experience and usability. 
       I was also able to practice evaluating interfaces and creating designs that follow the Interaction Design Principles.`,
-    images: ['/case-study-1-issue-1.png']
+    images: ['/case-study-1-issue-1.png', 
+      '/case-study-1-issue-2-1.png', 
+      '/case-study-1-issue-2-2.png', 
+      '/case-study-1-redesign-1.png', 
+      'case-study-1-redesign-2.png', 
+      '/case-study-1-redesign-3.png',
+      '/case-study-1-redesign-4.png',
+      '/case-study-1-issue-3.png']
   }
   // Add more projects here as you create them
 ]
+
+
 

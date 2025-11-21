@@ -13,6 +13,7 @@ function About() {
               designer and front-end developer with a passion for creating user-friendly digital experiences.  I am currently looking 
               for internship opportuniies for the summer of 2026. 
             </p>
+            <a href="/Dana Brunson Resume 0925 (1).pdf" target="_blank" rel="noopener noreferrer" className="about-resume-link">Resume</a>
           </div>
         </div>
       </section>
