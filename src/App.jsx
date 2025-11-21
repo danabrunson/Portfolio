@@ -3,8 +3,9 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
-import ProjectDetail from './pages/ProjectDetail'
 import Contact from './pages/Contact'
+import TorontoCupcakes from './pages/projects/TorontoCupcakes'
+import DesignSprint from './pages/projects/DesignSprint'
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/:id" element={<ProjectDetail />} />
+          <Route path="/projects/interaction-design-rules" element={<TorontoCupcakes />} />
+          <Route path="/projects/design-sprint" element={<DesignSprint />} />
           <Route path="/contact" element={<Contact />} />
+          
         </Routes>
       </div>
     </Router>
