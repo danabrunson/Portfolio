@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { getAssetPath } from '../../utils/paths'
 
 export default function TorontoCupcakes() {
   return (
@@ -25,14 +26,14 @@ export default function TorontoCupcakes() {
             </p>
 
             <h4>Affordances and Signifiers</h4>
-            <img className='case-study-image' src="/case-study-1-issue-1.png" alt="Affordance and Signifier Issue" />
+            <img className='case-study-image' src={getAssetPath('/case-study-1-issue-1.png')} alt="Affordance and Signifier Issue" />
             <p>The first issue that I focused on was the website's navigation menu, however it was 
                 not visible on any page unless the hamburger icon was clicked or the user scrolls to 
                 look at the site footer. The afforded capabilities of the user were not known because 
                 the menu was not visible. I created a clear navigation menu that 
                 stayed at the top of the page with all of the pages listed and clickable.
             </p>
-            <img className ='case-study-image' src="/case-study-1-redesign-1.png" alt=" AF Redesign 1" />
+            <img className ='case-study-image' src={getAssetPath('/case-study-1-redesign-1.png')} alt=" AF Redesign 1" />
             <p>My second issue was with the bar at the top of the screen that appears clickable and 
               has a message for users to look at a certain page of the site. The bar that contains the 
               message and the content could let the user believe that clicking this bar would redirect 
@@ -40,12 +41,12 @@ export default function TorontoCupcakes() {
               redesign and also turned this bar into a button that does redirect the user to the page 
               mentioned. It is also styled in the same way as their existing link to read their statement 
               regarding the US Tariffs.</p>
-               <img className='case-study-image' src="/case-study-1-redesign-2.png" alt="Redesign example 2" />
+               <img className='case-study-image' src={getAssetPath('/case-study-1-redesign-2.png')} alt="Redesign example 2" />
             
             <h4>Mapping</h4>
-            <img src="/case-study-1-issue-2-1.png" alt="Mapping issue" className="case-study-image" />
+            <img src={getAssetPath('/case-study-1-issue-2-1.png')} alt="Mapping issue" className="case-study-image" />
             <div className="project-images">
-              <img src="/case-study-1-issue-2-2.png" alt="Mapping issue" />
+              <img src={getAssetPath('/case-study-1-issue-2-2.png')} alt="Mapping issue" />
               <p>A mapping issue I spotted was that the action of clicking "Add to Cart" from the cupcake page 
                 takes you directly to the cart and interrupts the shopping experience. This can be annoying 
                 for the user if trying to order multiple different flavors and being directed back and forth 
@@ -54,8 +55,8 @@ export default function TorontoCupcakes() {
                 states that the item has been added to the cart and gives the option to view the cart without automatically 
                 redirecting the user to it. The resulting action from the button matches the user's expectation of adding 
                 the item to their cart and does not force them to take any other unwanted action as the original does.</p>
-              <img src="/case-study-1-redesign-3.png" alt="Redesign example 3" />
-              <img src="/case-study-1-redesign-4.png" alt="Redesign example 4" />
+              <img src={getAssetPath('/case-study-1-redesign-3.png')} alt="Redesign example 3" />
+              <img src={getAssetPath('/case-study-1-redesign-4.png')} alt="Redesign example 4" />
               <p>The second issue is that there is no clear page for ordering. To order cupcakes, the user must click on a 
                 section under "Cupcakes" and then click their desired flavors from there. It is not immediately clear how to 
                 order from the site before clicking around. The "Cupcakes" label doesn't reflect the action of ordering from 
@@ -91,7 +92,7 @@ export default function TorontoCupcakes() {
               <li>Design Principles</li>
             </ul>
           </div>
-          <p>A link to the full assignment can be found <a href="/629 Interaction Design Rules Part 2.pdf" target='_blank' style={{textDecoration:'underline'}}>here</a></p>
+          <p>A link to the full assignment can be found <a href={getAssetPath('/629 Interaction Design Rules Part 2.pdf')} target='_blank' rel="noopener noreferrer" style={{textDecoration:'underline'}}>here</a></p>
         </div>
       </section>
     </main>
