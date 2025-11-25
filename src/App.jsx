@@ -8,8 +8,11 @@ import TorontoCupcakes from './pages/projects/TorontoCupcakes'
 import DesignSprint from './pages/projects/DesignSprint'
 
 function App() {
+  // Use basename for GitHub Pages deployment
+  const basename = import.meta.env.PROD ? '/Portfolio' : ''
+  
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="App">
         <Navbar />
         <Routes>

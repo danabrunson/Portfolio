@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Home() {
   return (
     <main>
@@ -8,7 +10,7 @@ function Home() {
             <p className="home-tagline">Developer and Designer.</p>
             <div className="home-buttons">
               <a href="/Dana Brunson Resume 0925 (1).pdf" target="_blank" rel="noopener noreferrer" className="home-resume-link"> View Resume</a>
-              <a href="/projects" className="home-projects-link">View Projects</a>
+              <Link to="/projects" className="home-projects-link">View Projects</Link>
             </div>
           </div>
         </div>
