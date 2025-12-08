@@ -6,7 +6,7 @@ export const projects = [
     id: 'interaction-design-rules',
     title: 'Toronto Cupcakes',
     category: 'Case Study',
-    thumbnail: getAssetPath('/images/toronto-cupcake-logo.png'),
+    thumbnail: getAssetPath('/images/case-study-1-redesign-1.png'),
     skills: ['Visual Design', 'Design Principles', 'Figma'],
   },
   {
