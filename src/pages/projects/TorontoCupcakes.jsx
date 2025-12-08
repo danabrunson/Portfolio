@@ -14,7 +14,7 @@ export default function TorontoCupcakes() {
           </div>
           <div className="project-detail-content">
             <p>September 2025 - September 2025</p>
-            <h4>Problem Statement</h4>
+            <h5>Problem Statement</h5>
             <p>The objective of the Interaction Design assignment was to find areas for improvement or the design principles of affordances, 
               signifiers, and mapping and create a redesign of the page that shows those improvements. The website that I was given to focus on for 
               this assignment was torontocupcakes.com.
