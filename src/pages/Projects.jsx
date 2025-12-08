@@ -20,7 +20,6 @@ function Projects() {
                 <div className="project-card-content">
                   <span className="project-category">{project.category}</span>
                   <h3 className="project-card-title">{project.title}</h3>
-                  <p className="project-card-description">{project.description}</p>
                   <div className="project-card-skills">
                     {project.skills.map((skill, index) => (
                       <span key={index} className="project-skill-tag">{skill}</span>

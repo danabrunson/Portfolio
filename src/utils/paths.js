@@ -8,3 +8,4 @@ export const getAssetPath = (path) => {
   return `${base}${cleanPath}`
 }
 
+

@@ -55,3 +55,4 @@ npm run preview
 
 The project uses CSS variables for theming. Update `src/styles/variables.css` to customize colors, fonts, and spacing.
 
+
