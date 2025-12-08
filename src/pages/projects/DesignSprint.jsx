@@ -48,9 +48,9 @@ export default function DesignSprint() {
                             on the interface, click the help button, and click back to the landing page from the notebook page. </p>
                             <p><a href="https://www.figma.com/proto/ujl71RSqVC099YaSqKUx2q/Sprint-1-Prototype?node-id=0-1&t=GsvBIPngkHivrZjZ-1">Click to see our first prototype!</a></p>
                             <div className="prototype-images">
-                                <img className='case-study-image' src={getAssetPath('/images/prototype-2-landing.png')} alt="Landing Page" />
-                                <img className='case-study-image' src={getAssetPath('/images/prototype-2-help.png')} alt="Help Button " />
-                                <img className='case-study-image' src={getAssetPath('/images/prototype-2-notebook.png')} alt="Notebook Page" />
+                                <img className='case-study-image' src={getAssetPath('/images/prototype-1-landing.png')} alt="Landing Page" />
+                                <img className='case-study-image' src={getAssetPath('/images/prototype-1-help.png')} alt="Help Button " />
+                                <img className='case-study-image' src={getAssetPath('/images/prototype-1-notebook.png')} alt="Notebook Page" />
                             </div>
 
                         <h6>Stage 5 : Test your prototyped solution with users</h6>

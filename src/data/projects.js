@@ -6,14 +6,14 @@ export const projects = [
     id: 'interaction-design-rules',
     title: 'Toronto Cupcakes',
     category: 'Case Study',
-    thumbnail: getAssetPath('/case-study-1-issue-1.png'),
+    thumbnail: getAssetPath('/images/toronto-cupcake-logo.png'),
     skills: ['Visual Design', 'Design Principles', 'Figma'],
   },
   {
     id: 'design-sprint',
     title: 'Interaction Design ',
     category: 'Case Study',
-    thumbnail: getAssetPath('/design-sprint-thumbnail.png'),
+    thumbnail: getAssetPath('/images/prototype-2-landing.png'),
     skills: ['UX Design', 'Prototyping', 'Figma'],
   }
   // Add more projects here as you create them
