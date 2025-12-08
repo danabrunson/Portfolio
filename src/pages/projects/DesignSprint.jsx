@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 export default function DesignSprint() {
     return (
@@ -11,12 +11,17 @@ export default function DesignSprint() {
                         <span className="project-category">Case Study</span>
                         <h1 className="project-detail-title">Process of Interaction Design</h1>
                     </div>
+                    <div className='project-skills-container'>
+                        <p className='project-skill'>Figma</p>
+                        <p className='project-skill'>Prototyping</p>
+                        <p className='project-skill'>User Testing</p>
+                    </div>
                     <div className="project-detail-content">
-                        <h6>Skills</h6>
-                        <p>Figma</p>
-                        <h6>Dates</h6>
+
+                        <h6>UX Designer</h6>
                         <p>November 17, 2025 - November 30, 2025</p>
-                        <h6>Team Members</h6>
+                        <h4>Team Members</h4>
+                        <p>Amy Ajih, William Parham</p>
                         <h4>Problem Statement</h4>
                         <p>How might we make HCC 629 students feel prepared and confident for exams using NotebookLM? </p>
                         <h4>Overview of Design Process</h4>
@@ -31,10 +36,11 @@ export default function DesignSprint() {
                             We chose visibility, attention, and the gulf of execution. </p>
                         <h6>Stage 2 : Ideate by employing divergent thinking</h6>
                         <p>
-                            During this stage, we created paper sketches of our ideas for redesigning our two required screens of NotebookLM. Each sketched addressed
+                           During this stage, we created paper sketches of our ideas for redesigning our two required screens of NotebookLM. Each sketched addressed
                             a different concept that we wanted to include in our redesign. Each team member created two sketches per concept, so we all had six sketches in total. </p>
                         <h6>Stage 3 : Employ convergent thinking</h6>
-                        <p>After creating the sketches we came together and discussed the ideas that we liked from each sketch and how we could add the different ideas into 
+                        <p>
+                            After creating the sketches we came together and discussed the ideas that we liked from each sketch and how we could add the different ideas into 
                             our prototype. </p>
                         <h6>Stage 4 : Prototype your solution</h6>
                         <p>

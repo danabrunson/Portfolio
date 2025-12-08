@@ -286,7 +286,7 @@ header.navbar-hidden {
   margin-top: var(--spacing-12);
 }
 
-/* Projects Section */
+/* Projects Page */
 .projects-section {
   background-color: var(--color-white);
   color: var(--color-primary);
@@ -295,6 +295,27 @@ header.navbar-hidden {
 .projects-section .section-title {
   padding: var(--spacing-30) 0 var(--spacing-24);
 }
+
+.project-detail-content h6{
+  margin-left: 2em;
+}
+.project-detail-content p{
+  margin-left: 4em;
+}
+
+.project-skills-container {
+  display: flex;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-8);
+}
+
+ .project-skill {
+  background-color: rgba(30, 18, 61, 0.1);
+  color: var(--color-primary);
+  padding: var(--spacing-1) var(--spacing-4);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);}
 
 /* Projects Grid */
 .projects-grid {
@@ -385,6 +406,8 @@ header.navbar-hidden {
   border-radius: var(--radius-sm);
   font-weight: var(--font-weight-medium);
 }
+
+
 
 /* Project Detail Page */
 .project-detail-section {
@@ -497,7 +520,7 @@ header.navbar-hidden {
 .contact-section .section-content {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   color: var(--color-primary)
@@ -510,7 +533,7 @@ header.navbar-hidden {
 .contact-info-list {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-8);
+  gap: var(--spacing-4);
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
@@ -523,13 +546,14 @@ header.navbar-hidden {
 
 .contact-info h2 {
   font-size: var(--font-size-2xl);
-  margin-bottom: var(--spacing-4);
+  margin-bottom: var(--spacing-2);
 }
 
 .contact-info p {
   font-size: var(--font-size-lg);
 }
 
+/*
 .linkedin-button {
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -537,7 +561,7 @@ header.navbar-hidden {
   border-radius: var(--radius-md);
   font-weight: var(--font-weight-medium);
   transition: var(--transition-base);
-}
+} */
 
 .contact-info a:hover {
   opacity: 0.8;
