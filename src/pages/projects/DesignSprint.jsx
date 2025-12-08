@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-
+import { getAssetPath } from '../../utils/paths';
 export default function DesignSprint() {
     return (
         <main>
@@ -47,6 +47,11 @@ export default function DesignSprint() {
                             We created our prototype using Figma. Our prototype included redesigns of the landing and notebook screen of NotebookLM. With our prototype, users are able to open an existing notebook
                             on the interface, click the help button, and click back to the landing page from the notebook page. </p>
                             <p><a href="https://www.figma.com/proto/ujl71RSqVC099YaSqKUx2q/Sprint-1-Prototype?node-id=0-1&t=GsvBIPngkHivrZjZ-1">Click to see our first prototype!</a></p>
+                            <div className="prototype-images">
+                                <img className='case-study-image' src={getAssetPath('/images/prototype-2-landing.png')} alt="Landing Page" />
+                                <img className='case-study-image' src={getAssetPath('/images/prototype-2-help.png')} alt="Help Button " />
+                                <img className='case-study-image' src={getAssetPath('/images/prototype-2-notebook.png')} alt="Notebook Page" />
+                            </div>
 
                         <h6>Stage 5 : Test your prototyped solution with users</h6>
                         <p>
@@ -63,6 +68,11 @@ export default function DesignSprint() {
                         <p>
                             To complete this design sprint, our team utilized Google Calendar to schedule meetings, Google Docs to exchange files and collaborate on our written work, Figma to create our prototype,
                             Google Meet for virtual meetings, and Google Chat for communications and planning.</p>
+                            <div className="prototype-images">
+                                <img className='case-study-image' src={getAssetPath('/images/prototype-2-landing.png')} alt="Landing Page" />
+                                <img className='case-study-image' src={getAssetPath('/images/prototype-2-help.png')} alt="Help Button " />
+                                <img className='case-study-image' src={getAssetPath('/images/prototype-2-notebook.png')} alt="Notebook Page" />
+                            </div>
                         <p><a href="https://www.figma.com/proto/6ayKXGtRKEeMP6ID7v6t9u/Sprint-2-Prototype?node-id=2-2251&t=YIIudKxo0kO2j0R3-1&starting-point-node-id=2%3A2251">Click to see our revised prototype!</a></p>
                         <h4>Final Outcome</h4>
                         <h4>Reflection and Lessons Learned</h4>
