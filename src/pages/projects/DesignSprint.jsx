@@ -10,6 +10,8 @@ export default function DesignSprint() {
                     <div className="project-detail-header">
                         <span className="project-category">Case Study</span>
                         <h1 className="project-detail-title">Process of Interaction Design</h1>
+                        <h6>UX Designer</h6>
+                        <p>November 17, 2025 - November 30, 2025</p>
                     </div>
                     <div className='project-skills-container'>
                         <p className='project-skill'>Figma</p>
@@ -17,9 +19,6 @@ export default function DesignSprint() {
                         <p className='project-skill'>User Testing</p>
                     </div>
                     <div className="project-detail-content">
-
-                        <h6>UX Designer</h6>
-                        <p>November 17, 2025 - November 30, 2025</p>
                         <h4>Team Members</h4>
                         <p>Amy Ajih, William Parham</p>
                         <h4>Problem Statement</h4>
@@ -46,7 +45,7 @@ export default function DesignSprint() {
                         <p>
                             We created our prototype using Figma. Our prototype included redesigns of the landing and notebook screen of NotebookLM. With our prototype, users are able to open an existing notebook
                             on the interface, click the help button, and click back to the landing page from the notebook page. </p>
-                            <p><a href="https://www.figma.com/proto/ujl71RSqVC099YaSqKUx2q/Sprint-1-Prototype?node-id=0-1&t=GsvBIPngkHivrZjZ-1">Click to see our first prototype!</a></p>
+                            <p className='prototype-link'><strong><a href="https://www.figma.com/proto/ujl71RSqVC099YaSqKUx2q/Sprint-1-Prototype?node-id=0-1&t=GsvBIPngkHivrZjZ-1">Click to see our first prototype!</a></strong></p>
                             <div className="prototype-images">
                                 <img className='case-study-image' src={getAssetPath('/images/prototype-1-landing.png')} alt="Landing Page" />
                                 <img className='case-study-image' src={getAssetPath('/images/prototype-1-help.png')} alt="Help Button " />
@@ -73,9 +72,12 @@ export default function DesignSprint() {
                                 <img className='case-study-image' src={getAssetPath('/images/prototype-2-help.png')} alt="Help Button " />
                                 <img className='case-study-image' src={getAssetPath('/images/prototype-2-notebook.png')} alt="Notebook Page" />
                             </div>
-                        <p><a href="https://www.figma.com/proto/6ayKXGtRKEeMP6ID7v6t9u/Sprint-2-Prototype?node-id=2-2251&t=YIIudKxo0kO2j0R3-1&starting-point-node-id=2%3A2251">Click to see our revised prototype!</a></p>
-                        <h4>Final Outcome</h4>
-                        <h4>Reflection and Lessons Learned</h4>
+                        <p className='prototype-link'><strong><a href="https://www.figma.com/proto/6ayKXGtRKEeMP6ID7v6t9u/Sprint-2-Prototype?node-id=2-2251&t=YIIudKxo0kO2j0R3-1&starting-point-node-id=2%3A2251">Click to see our revised prototype!</a></strong></p>
+                        <h4>Reflection</h4>
+                        <p>Overall I enjoyed the process of creating the prototype. I thought it was interesting to see the final design and what we came up with compared to the sketches that we created 
+                            individually. I am proud of the work that my teammates and I put into the design. I thought it was cool to go through all of the steps of a real design process and be able to incorporate 
+                            user testing and feedback into the designs, which I hadn't had the opportunity to do beforehand.
+                            </p>
                     </div>
                 </div>
             </section>

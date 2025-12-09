@@ -11,14 +11,14 @@ export default function TorontoCupcakes() {
           <div className="project-detail-header">
             <span className="project-category">Case Study</span>
             <h1 className="project-detail-title">Interaction Design Rules</h1>
+            <h6>UX Designer</h6>
+             <p>September 29, 2025 - October 5, 2025</p>
           </div>
           <div className='project-skills-container'>
               <p className='project-skill'>Figma</p>
               <p className='project-skill'>Design Principles</p>
             </div>
           <div className="project-detail-content">
-            <h6>UX Designer</h6>
-            <p>September 29, 2025 - October 5, 2025</p>
             <h4>Problem Statement</h4>
             <p>The objective of the Interaction Design assignment was to find areas for improvement or the design principles of affordances, 
               signifiers, and mapping and create a redesign of the page that shows those improvements. The website that I was given to focus on for 
@@ -49,8 +49,11 @@ export default function TorontoCupcakes() {
             <img className='case-study-image' src={getAssetPath('/images/case-study-1-redesign-2.png')} alt="Redesign example 2" />
             
             <h4>Mapping</h4>
-            <img className='case-study-image' src={getAssetPath('/images/case-study-1-issue-2-1.png')} alt="Mapping issue" />              
-            <img className='case-study-image' src={getAssetPath('/images/case-study-1-issue-2-2.png')} alt="Mapping issue" />
+            <p>Original Site: </p>
+            <div className="prototype-images">
+              <img className='case-study-image' src={getAssetPath('/images/case-study-1-issue-2-1.png')} alt="Mapping issue" />              
+              <img className='case-study-image' src={getAssetPath('/images/case-study-1-issue-2-2.png')} alt="Mapping issue" /> 
+            </div>
             <p>A mapping issue I spotted was that the action of clicking "Add to Cart" from the cupcake page 
                 takes you directly to the cart and interrupts the shopping experience. This can be annoying 
                 for the user if trying to order multiple different flavors and being directed back and forth 
@@ -59,8 +62,11 @@ export default function TorontoCupcakes() {
                 states that the item has been added to the cart and gives the option to view the cart without automatically 
                 redirecting the user to it. The resulting action from the button matches the user's expectation of adding 
                 the item to their cart and does not force them to take any other unwanted action as the original does.</p>
-            <img className='case-study-image' src={getAssetPath('/images/case-study-1-redesign-3.png')} alt="Redesign example 3" />
-            <img className='case-study-image' src={getAssetPath('/images/case-study-1-redesign-4.png')} alt="Redesign example 4" />
+                <p>Redesigns:</p>
+                <div className='prototype-images'>
+                  <img className='case-study-image' src={getAssetPath('/images/case-study-1-redesign-3.png')} alt="Redesign example 3" />
+                  <img className='case-study-image' src={getAssetPath('/images/case-study-1-redesign-4.png')} alt="Redesign example 4" />
+                </div>
             <p>The second issue is that there is no clear page for ordering. To order cupcakes, the user must click on a 
                 section under "Cupcakes" and then click their desired flavors from there. It is not immediately clear how to 
                 order from the site before clicking around. The "Cupcakes" label doesn't reflect the action of ordering from 
@@ -86,12 +92,6 @@ export default function TorontoCupcakes() {
               principles when creating designs. The application of these principles can greatly affect the user's experience and usability. 
               I was also able to practice evaluating interfaces and creating designs that follow the Interaction Design Principles.
             </p>
-
-            <h4>Skills</h4>
-            <ul>
-              <li>Visual Design</li>
-              <li>Design Principles</li>
-            </ul>
           </div>
           <p><strong>A link to the full assignment can be found <a href={getAssetPath('/629 Interaction Design Rules Part 2.pdf')} target='_blank' rel="noopener noreferrer" style={{textDecoration:'underline'}}>here</a></strong></p>
         </div>

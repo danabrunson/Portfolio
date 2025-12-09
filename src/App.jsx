@@ -9,7 +9,7 @@ import DesignSprint from './pages/projects/DesignSprint'
 
 function App() {
   // Use basename for GitHub Pages deployment
-  const basename = import.meta.env.PROD ? '/Portfolio' : ''
+  const basename = import.meta.env.PROD ? '/Portfolio' : '/'
   
   return (
     <Router basename={basename}>

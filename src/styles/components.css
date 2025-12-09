@@ -2,7 +2,7 @@
    COMPONENT STYLES
    ============================================ */
 
-/* Navigation Bar */
+/*=================== Navigation Bar ====================*/
 header {
   position: fixed;
   top: 0;
@@ -65,7 +65,7 @@ header.navbar-hidden {
   text-decoration: underline;
 }
 
-/* Section Styles */
+/* =================== Section Styles ========================== */ 
 .section {
   padding: 0 var(--container-padding);
 }
@@ -87,7 +87,7 @@ header.navbar-hidden {
   margin: 0 auto;
 }
 
-/* Home Section */
+/* ===================== Home Section ===================== */
 .home-section {
   padding: 0;
   background-color: var(--color-white);
@@ -242,7 +242,7 @@ header.navbar-hidden {
   height: 300px;
 }
 
-/* About Section */
+/* ==================== About Section ===================== */
 .about-section {
   padding: 0 var(--container-padding);
   min-height: 100vh;
@@ -286,7 +286,7 @@ header.navbar-hidden {
   margin-top: var(--spacing-12);
 }
 
-/* Projects Page */
+/* =================== Projects Page ==================== */
 .projects-section {
   background-color: var(--color-white);
   color: var(--color-primary);
@@ -297,10 +297,10 @@ header.navbar-hidden {
 }
 
 .project-detail-content h6{
-  margin-left: 2em;
+  margin-left: 1em;
 }
 .project-detail-content p{
-  margin-left: 4em;
+  margin-left: 2em;
 }
 
 .project-skills-container {
@@ -317,7 +317,7 @@ header.navbar-hidden {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);}
 
-/* Projects Grid */
+/* =================== Projects Grid =================== */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -407,6 +407,10 @@ header.navbar-hidden {
   font-weight: var(--font-weight-medium);
 }
 
+.prototype-link {
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
 
 
 /* Project Detail Page */
@@ -520,7 +524,7 @@ header.navbar-hidden {
   align-items: center;
 }
 
-/* Contact Section */
+/* ======================= Contact Section ===================== */
 .contact-section {
   background-color: var(--color-white);
   color: var(--color-primary);
