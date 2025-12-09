@@ -19,7 +19,7 @@ export default function DesignSprint() {
                         <p className='project-skill'>User Testing</p>
                     </div>
                     <div className="project-detail-content">
-                        <h4>Team Members</h4>
+                        <h6>Team Members</h6>
                         <p>Amy Ajih, William Parham</p>
                         <h4>Problem Statement</h4>
                         <p>How might we make HCC 629 students feel prepared and confident for exams using NotebookLM? </p>
