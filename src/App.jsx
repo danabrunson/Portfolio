@@ -6,6 +6,7 @@ import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import TorontoCupcakes from './pages/projects/TorontoCupcakes'
 import DesignSprint from './pages/projects/DesignSprint'
+import TwitterRedesign from './pages/projects/TwitterResdesign'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/interaction-design-rules" element={<TorontoCupcakes />} />
         <Route path="/projects/design-sprint" element={<DesignSprint />} />
+        <Route path="/projects/twitter-redesign" element={<TwitterRedesign />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>

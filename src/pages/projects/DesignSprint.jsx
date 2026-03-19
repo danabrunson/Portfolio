@@ -20,7 +20,7 @@ export default function DesignSprint() {
                     </div>
                     <div className="project-detail-content">
                         <h6>Team Members</h6>
-                        <p>Amy Ajih, William Parham</p>
+                        <p>Amy, William</p>
                         <h4>Problem Statement</h4>
                         <p>How might we make HCC 629 students feel prepared and confident for exams using NotebookLM? </p>
                         <h4>Overview of Design Process</h4>

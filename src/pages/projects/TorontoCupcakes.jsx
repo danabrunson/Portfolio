@@ -54,9 +54,10 @@ export default function TorontoCupcakes() {
               <img className='case-study-image' src={getAssetPath('/images/case-study-1-issue-2-1.png')} alt="Mapping issue" />              
               <img className='case-study-image' src={getAssetPath('/images/case-study-1-issue-2-2.png')} alt="Mapping issue" /> 
             </div>
-            <p>A mapping issue I spotted was that the action of clicking "Add to Cart" from the cupcake page 
-                takes you directly to the cart and interrupts the shopping experience. This can be annoying 
-                for the user if trying to order multiple different flavors and being directed back and forth 
+            <p>In the images above, the issues that I noticed were the action of clicking "Add to Cart" from the cupcake page 
+                takes you directly to the cart and interrupts the shopping experience, and the lack of a clear page to place an order.</p>
+              <p>In my redesigns, I addressed this issue by creating a confirmation message that appears when the user clicks "Add to Cart", notifying them that the item has been successfully added without forcing them to leave the cupcake selection page.</p> 
+              <p>This can be annoying for the user if trying to order multiple different flavors and being directed back and forth 
                 between the cart and the cupcake order page. This action resulting from the button is unexpected 
                 and does not reflect the button label. This redesign is better than the original because it clearly 
                 states that the item has been added to the cart and gives the option to view the cart without automatically 
