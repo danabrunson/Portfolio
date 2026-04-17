@@ -1,12 +1,18 @@
 import { getAssetPath } from '../utils/paths'
+// Project data for projects page:
+// id: unique identifier for the project, used for routing
+// title: the name of the project
+// category: the type of project (e.g., case study, personal project, etc.)
+// thumbnail: a path to an image representing the project, used on the projects listing page
+// skills: an array of skills or tools used in the project, which can be displayed on the project card or detail page
 
-// Projects data - add more projects here
+
 export const projects = [
     {
     id: 'twitter-redesign',
     title: 'Twitter Redesign',
     category: 'Case Study',
-    thumbnail: getAssetPath('/images/prototype-2-landing.png'),
+    thumbnail: getAssetPath('/placeholder-image.png'),
     skills: ['UX Design Process', 'Figma'],
   },
   
@@ -24,7 +30,6 @@ export const projects = [
     thumbnail: getAssetPath('/images/case-study-1-redesign-1.png'),
     skills: ['Visual Design', 'Design Principles', 'Figma'],
   },
-  // Add more projects here as you create them
 ]
 
 

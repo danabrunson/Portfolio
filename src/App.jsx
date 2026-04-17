@@ -6,7 +6,7 @@ import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import TorontoCupcakes from './pages/projects/TorontoCupcakes'
 import DesignSprint from './pages/projects/DesignSprint'
-import TwitterRedesign from './pages/projects/TwitterResdesign'
+import TwitterRedesign from './pages/projects/TwitterRedesign'
 
 function App() {
   return (

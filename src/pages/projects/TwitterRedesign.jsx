@@ -17,12 +17,11 @@ export default function TwitterRedesign() {
             </div>
             <div className="project-detail-content">
                 <h4>Problem Statement</h4>
-                <p>This project was created as a semester-long project for the HCC 710 course at UMBC; Graphic Design for Interactive Systems. The project objective was to choose a website or application to redesign 
-                    according to the UX design process learned thoughout the course.
+                <p>This project was created as a semester-long project for the Graphic Design for Interactive Systems course at UMBC. The project objective was to choose a website or application to redesign 
+                    according to the UX design process learned thoughout the course. 
                 </p>
-
-                <p>I chose Twitter for my topic to redesign because as a user myself, I felt the rebranding of the app to X was a large change that affected the user experience negatively. My goal was to redesign the 
-                    interface to improve usability and maintain a sense of familiarity for users while incorporating modern design principles.</p>
+                <p>I chose Twitter or X for my topic to redesign because as a user myself, I felt the rebranding of the app to X was a large change that negatively affected the user's experience. I also noticed discourse about the 
+                    rebranding online that was overall negative. My goal was to redesign the interface to improve usability and maintain a sense of familiarity for users while incorporating more modern design principles.</p>
 
                 <h4>Design Process</h4>
                 
@@ -38,6 +37,7 @@ export default function TwitterRedesign() {
                     <img className='case-study-image' src={getAssetPath('/images/User Persona 3.png')} alt="User Persona 3" />
                 </div>
                 <h6>Logo Revision</h6>
+                <p>The process of redesigning the logo involved starting with brainstorming ideas that would  </p>
 
                 <h6>Color Harmonies</h6>
                 <h6>Sitemap</h6>
