@@ -10,10 +10,9 @@ function About() {
           <div className="about-details">
             <p className="about-me">
               Hi! My name is Dana Brunson. I am a graduate student in the Human Centered Computing program at the
-              University of Maryland, Baltimore County and will graduate in May 2027. I graduated with my Bachelor of Science in 
+              University of Maryland, Baltimore County graduating in December 2026. I graduated with my Bachelor of Science in 
               Computer Science from North Carolina Agricultural and Technical State University in May 2025. I am an aspiring UX 
-              designer and front-end developer with a passion for creating user-friendly digital experiences.  I am currently looking 
-              for internship opportuniies for the summer of 2026. 
+              designer with a passion for creating user-friendly digital experiences.  I am currently looking for internship opportuniies for the summer of 2026. 
             </p>
             <a href={getAssetPath('/Dana Brunson Resume 0925 (1).pdf')} target="_blank" rel="noopener noreferrer" className="about-resume-link">Resume</a>
           </div>

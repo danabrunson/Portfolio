@@ -322,7 +322,8 @@ header.navbar-hidden {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--spacing-8);
-  margin-top: var(--spacing-8);
+  margin-top: var(--spacing-4);
+  margin-bottom: var(--spacing-12)
 }
 
 .project-card {
@@ -532,10 +533,6 @@ header.navbar-hidden {
 
 .contact-section .section-content {
   min-height: 100vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   color: var(--color-primary)
 }
 
@@ -544,27 +541,21 @@ header.navbar-hidden {
 }
 
 .contact-info-list {
-  display: flex;
-  flex-direction: column;
   gap: var(--spacing-4);
-  align-items: center;
   max-width: 600px;
   margin: 0 auto;
 }
 
 .contact-info {
-  text-align: center;
   width: 100%;
 }
 
 .contact-info h2 {
-  font-size: var(--font-size-2xl);
-  margin-bottom: var(--spacing-2);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-normal);
+  margin-bottom: var(--spacing-8);
 }
 
-.contact-info p {
-  font-size: var(--font-size-lg);
-}
 
 /*
 .linkedin-button {
