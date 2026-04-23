@@ -12,7 +12,7 @@ export const projects = [
     id: 'twitter-redesign',
     title: 'Twitter Redesign',
     category: 'Case Study',
-    thumbnail: getAssetPath('/placeholder-image.png'),
+    thumbnail: getAssetPath('/images/Card-Front.png'),
     skills: ['UX Design Process', 'Figma'],
   },
   
