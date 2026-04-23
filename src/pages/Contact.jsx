@@ -7,10 +7,10 @@ function Contact() {
         <div className="section-content">
           <ul className="contact-info-list">
             <li className="contact-info">
-              <h2>Email</h2>
+              <h2>443-561-5789</h2>
             </li>
             <li className="contact-info">
-              <h2>Phone Number</h2>
+              <h2>brunson_dana@yahoo.com</h2>
             </li>
             <li className="contact-info linkedin-button">
               <a href="https://www.linkedin.com/in/dana-brunson">
